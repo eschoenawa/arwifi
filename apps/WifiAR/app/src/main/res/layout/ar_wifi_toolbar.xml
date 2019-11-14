@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:buttonBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorPrimary"
+    android:baselineAligned="false"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/toolbarLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateTint="@android:color/background_light"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickSettings"
+        buttonBar:image="@drawable/ic_settings_white" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnUndo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickUndo"
+        buttonBar:enabled="false"
+        buttonBar:image="@drawable/button_undo" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnAddPointAndFinishArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickAddPoint"
+        buttonBar:image="@drawable/ic_add_location_white" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnMeasure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickMeasure"
+        android:visibility="gone"
+        buttonBar:image="@drawable/ic_network_check_white" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnCreateHeatmap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickFinish"
+        android:visibility="gone"
+        buttonBar:enabled="false"
+        buttonBar:image="@drawable/button_start_heatmap_generation" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnRestart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickRestart"
+        android:visibility="gone"
+        buttonBar:image="@drawable/ic_refresh_white" />
+
+    <de.eschoenawa.wifiar.views.ButtonBarIconButton
+        android:id="@+id/btnCreateImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClickCreateImage"
+        android:visibility="gone"
+        buttonBar:image="@drawable/ic_crop_rotate_white" />
+
+</LinearLayout>

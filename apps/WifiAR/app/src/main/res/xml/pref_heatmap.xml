@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_title_heatmap_main_category" />
+
+    <ListPreference
+        android:defaultValue="100"
+        android:entries="@array/pref_pixel_meter_titles"
+        android:entryValues="@array/pref_pixel_meter_values"
+        android:key="pixel_meter"
+        android:title="@string/pref_title_pixel_meter" />
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_heatmap_color_titles"
+        android:entryValues="@array/pref_heatmap_color_values"
+        android:key="heatmap_color"
+        android:title="@string/pref_title_heatmap_color" />
+
+    <ListPreference
+        android:defaultValue="BOUNDS"
+        android:entries="@array/pref_heatmap_mode_titles"
+        android:entryValues="@array/pref_heatmap_mode_values"
+        android:key="heatmap_mode"
+        android:title="@string/pref_title_heatmap_mode" />
+
+    <ListPreference
+        android:defaultValue="100"
+        android:entries="@array/pref_gradient_width_titles"
+        android:entryValues="@array/pref_gradient_width_values"
+        android:key="gradient_width"
+        android:title="@string/pref_title_gradient_width" />
+
+    <PreferenceCategory android:title="@string/pref_title_debugging_category" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="debug_lines"
+        android:summary="@string/pref_description_debug_lines"
+        android:title="@string/pref_title_debug_lines" />
+
+</PreferenceScreen>

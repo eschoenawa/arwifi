@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArRecordVisualizeActivity">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#c8cfd8dc"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClickTipText"
+            android:text="@string/hint_find_planes"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ProgressBar
+            android:id="@+id/hintLoading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="true"
+            android:indeterminateTint="?android:attr/colorPrimary"
+            android:progressTint="?android:attr/colorPrimary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <de.eschoenawa.wifiar.views.ArWifiToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone" />
+
+
+</FrameLayout>

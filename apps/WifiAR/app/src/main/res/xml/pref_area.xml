@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="auto_area"
+        android:summary="@string/pref_summary_auto_area"
+        android:title="@string/pref_title_auto_area" />
+
+</PreferenceScreen>

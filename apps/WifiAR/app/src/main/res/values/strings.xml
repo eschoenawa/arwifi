@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name" translatable="false">Wifi AR</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Area settings -->
+    <string name="pref_header_area">Heatmap Abmessungen</string>
+    <string name="pref_title_auto_area">Bereich automatisch definieren</string>
+    <string name="pref_summary_auto_area">Die Bereichsauswahl wird übersprungen und durch die Platzierung von Messpunkten ersetzt. ACHTUNG: Dies deaktiviert das Onboarding.</string>
+
+    <!-- Heatmap settings -->
+    <string name="pref_header_heatmap">Heatmap Einstellungen</string>
+
+    <string name="pref_title_heatmap_main_category">Heatmap Optionen</string>
+
+    <string name="pref_title_pixel_meter">Pixel pro Meter</string>
+    <string-array name="pref_pixel_meter_titles">
+        <item>10px (schlechte Auflösung)</item>
+        <item>50px (mittlere Auflösung)</item>
+        <item>100px (hohe Auflösung)</item>
+        <item>500px (sehr hohe Auflösung)</item>
+    </string-array>
+    <string-array name="pref_pixel_meter_values" translatable="false">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+    </string-array>
+
+    <string name="pref_title_heatmap_mode">Heatmap Modus</string>
+    <string-array name="pref_heatmap_mode_titles">
+        <item>Relativ</item>
+        <item>Android Signal Level</item>
+    </string-array>
+    <string-array name="pref_heatmap_mode_values" translatable="false">
+        <item>BOUNDS</item>
+        <item>WIFI_BARS</item>
+    </string-array>
+
+    <string name="pref_title_heatmap_color">Heatmap Farben</string>
+    <string-array name="pref_heatmap_color_titles">
+        <item>Rot &lt; Gelb &lt; Grün</item>
+        <item>Grün &lt; Gelb &lt; Rot</item>
+        <item>Rot &lt; Gelb &lt; Grün &lt; Dunkelgrün</item>
+        <item>Rot &lt; Grün</item>
+        <item>Rot &lt; Gelb &lt; Transparent</item>
+    </string-array>
+    <string-array name="pref_heatmap_color_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="pref_title_gradient_width">Farbverlauf Breite</string>
+    <string-array name="pref_gradient_width_titles">
+        <item>kein Verlauf (nur gegebene Farben)</item>
+        <item>10 px (grob)</item>
+        <item>50 px (fein)</item>
+        <item>100 px (sehr fein)</item>
+    </string-array>
+    <string-array name="pref_gradient_width_values" translatable="false">
+        <item>-1</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- Measure settings -->
+    <string name="pref_header_measure">Messungseinstellungen</string>
+    <string name="pref_summary_accurate_rssi">Mit erneutem Abfragen des RSSI-Werts auf neuen WiFi-Scan warten (für die ersten Messungen leicht langsamer).</string>
+    <string name="pref_title_accurate_rssi">Genauere RSSI-Messung</string>
+    <string name="pref_title_number_of_measurements">Anzahl an Messungen an einem Messpunkt (0 &lt; x &lt; 10)</string>
+
+    <!-- Other Strings -->
+    <string name="hint_area_placement">Bitte platzieren Sie die Eckpunkte des Bereiches, in dem die WLAN-Verteilung analysiert werden soll.</string>
+    <string name="hint_measure_auto_area">Stellen Sie sich an einen Ort und drücken Sie auf \'WLAN messen\' um einen Messpunkt und Eckpunkt des Bereichs zu erstellen.</string>
+    <string name="hint_find_planes">Bewegen Sie Ihr Smartphone ein wenig hin und her während der Boden im Sichtfeld der Kamera ist.</string>
+    <string name="hint_area_can_be_finished">Bitte platzieren Sie die Eckpunkte des Bereiches, in dem die WLAN-Verteilung analysiert werden soll. Schließen Sie den Bereich ab indem Sie wieder den Startpunkt wählen.</string>
+    <string name="hint_creating_heatmap">Bitte warten Sie während die Heatmap-Werte interpoliert werden…</string>
+    <string name="hint_rendering_heatmap">Bitte warten Sie während die Heatmap gerendert wird…</string>
+    <string name="hint_heatmap_done">Heatmap erstellt!</string>
+    <string name="hint_go_to_measurement_location">Stellen Sie sich an einen Ort und drücken Sie auf \'WLAN messen\' um einen Messpunkt zu erstellen.</string>
+    <string name="hint_wait_for_measure_end">Messung wird durchgeführt. Bitte warten Sie auf den Abschluss der Messung bis Sie sich zum nächsten Messpunkt bewegen…</string>
+    <string name="settings">Einstellungen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="pref_title_debugging_category">Debugging</string>
+    <string name="pref_title_debug_lines">Achsen einblenden</string>
+    <string name="pref_description_debug_lines">Zeigt die Achsen und die Größe der Bitmap in AR durch Linien an.</string>
+    <string name="tip_title_new_area_point">Bereich festlegen</string>
+    <string name="tip_text_new_area_point">Platzieren Sie mit diesem Knopf die Eckpunkte des Bereichs, in dem die WLAN-Empfangsstärke analysiert werden soll. Platzieren Sie einen Eckpunkt auf dem ersten Punkt wenn Sie fertig sind.</string>
+    <string name="tip_title_area_done">Messung beginnen</string>
+    <string name="tip_text_area_done">Sind Sie mit dem Bereich zufrieden? Falls ja klicken Sie auf diesen Haken um in den Vermessungsmodus zu wechseln.</string>
+    <string name="tip_title_measure">Messung durchführen</string>
+    <string name="tip_text_measure">Stellen Sie sich an einen beliebigen Ort (dieser darf auch außerhalb des definierten Bereichs liegen) und klicken Sie auf diesen Knopf um eine WLAN-Messung an Ihrer aktuellen Position durchzuführen. Führen Sie an mindestens drei Orten eine solche Messung durch.</string>
+    <string name="tip_title_generate">Heatmap erstellen</string>
+    <string name="tip_text_generate">Sie haben nun drei Messpunkte erstellt. Jetzt können Sie mit diesem Knopf eine Heatmap generieren lassen. Sie können aber auch weitere Messpunkte erstellen um das Ergebnis zu verfeinern.</string>
+    <string name="dialog_title_reset">Verlust des Fortschritts</string>
+    <string name="dialog_message_reset">Wenn Sie jetzt diese Aktion durchführen gehen Bereiche, Messungen und Heatmaps verloren, da ARCore-Sessions nicht persistiert werden können. Sie müssen im Anschluss wieder neu anfangen. Fortfahren?</string>
+    <string name="dialog_title_too_much_movement">Zu weit entfernt</string>
+    <string name="dialog_message_too_much_movement">Sie haben sich zu weit vom Startpunkt der Messung entfernt. Bitte warten Sie auf den Abschluss der Messung bevor Sie sich zum nächsten Messpunkt begeben.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="dialog_title_location_rationale">Standortberechtigung</string>
+    <string name="dialog_message_location_rationale">Bitte vergeben Sie die Standortberechtigung damit Wifi AR die WLAN-Empfangsstärke analysieren kann.</string>
+
+</resources>

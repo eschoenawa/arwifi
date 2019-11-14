@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="accurate_rssi"
+        android:summary="@string/pref_summary_accurate_rssi"
+        android:title="@string/pref_title_accurate_rssi" />
+
+    <EditTextPreference
+        android:defaultValue="3"
+        android:key="number_of_measurements"
+        android:title="@string/pref_title_number_of_measurements"
+        android:inputType="number"
+        android:maxLength="1"
+        android:singleLineTitle="false"
+        tools:targetApi="o" />
+
+
+</PreferenceScreen>

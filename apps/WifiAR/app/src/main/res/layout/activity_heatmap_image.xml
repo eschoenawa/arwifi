@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HeatmapImageActivity">
+
+    <TextView
+        android:id="@+id/txtRotateImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drehen Sie die Heatmap so, wie Sie sie gerne abspeichern möchten. Die Größe des Ergebnis-Bildes richtet sich nach der Auflösung der Heatmap und nicht nach der hier angezeigten Größe." />
+
+    <ImageView
+        android:id="@+id/heatmap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_format_shapes_black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:focusable="false">
+
+        <de.eschoenawa.wifiar.views.ButtonBarIconButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSave"
+            app:image="@drawable/ic_save_white" />
+    </LinearLayout>
+</LinearLayout>
